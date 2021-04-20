@@ -17,15 +17,15 @@
     </label>
     <br>
     <label>
-        func Max <input type="radio" name="funcMax" id="funcMax">
+        func Max <input type="radio" name="radio" value="max" id="Max">
     </label>
     <br>
     <label>
-        func Min <input type="radio" name="funcMin" id="funcMin">
+        func Min <input type="radio" name="radio" value="min" id="Min">
     </label>
     <br>
     <label>
-        func Average <input type="radio" name="funcAverg" id="funcAverg">
+        func Average <input type="radio" name="radio" value="avr" id="Aver">
     </label>
     <br>
     <input type="submit">

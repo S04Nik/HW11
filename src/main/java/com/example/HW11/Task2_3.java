@@ -27,16 +27,16 @@ public class Task2_3 extends HttpServlet {
         min=Integer.min(min,c);
         max=Integer.max(a,b);
         max=Integer.max(max,c);
-
-        if(request.getParameter("funcMin").equals("on"))
-        {
-            write.println("Min  : "+min+"\n");
-        }
-        if(request.getParameter("funcMax").equals("on"))
+        String choice=request.getParameter("radio");
+        if(choice.equals("max"))
         {
             write.println("Max : "+max+"\n");
-        }
-        if(request.getParameter("funcAverg").equals("on"))
+        }else
+        if(choice.equals("min"))
+        {
+            write.println("Min  : "+min+"\n");
+        }else
+        if(choice.equals("avr"))
         {
             write.println("Average  : "+((a+b+c)/3)+"\n");
         }
